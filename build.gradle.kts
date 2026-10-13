@@ -3,7 +3,6 @@ import dev.slne.surf.api.gradle.util.slneReleases
 buildscript {
     repositories {
         gradlePluginPortal()
-        mavenLocal()
         maven("https://reposilite.slne.dev/releases")
     }
     dependencies {
