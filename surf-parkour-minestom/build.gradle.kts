@@ -14,10 +14,6 @@ surfMicroservice {
     withRabbitModule(RabbitModule.CLIENT_API)
 }
 
-repositories {
-    mavenLocal()
-}
-
 minestomPluginFile {
     main = "dev.slne.surf.parkour.minestom.ParkourMinestomPlugin"
     authors = listOf("red")
