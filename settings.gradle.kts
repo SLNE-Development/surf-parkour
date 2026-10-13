@@ -10,7 +10,6 @@ include("surf-parkour-microservice")
 pluginManagement {
     repositories {
         gradlePluginPortal()
-        mavenLocal()
         maven("https://reposilite.slne.dev/releases")
     }
 }
