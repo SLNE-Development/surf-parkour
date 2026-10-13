@@ -1,7 +1,7 @@
 package dev.slne.surf.parkour.minestom.command.subcommand
 
-import dev.slne.minestom.lobby.api.command.commandapi.dsl.anyExecutorSuspend
-import dev.slne.minestom.lobby.api.command.commandapi.dsl.subcommand
+import dev.slne.surf.api.minestom.command.dsl.anyExecutorSuspend
+import dev.slne.surf.api.minestom.command.dsl.subcommand
 import dev.slne.surf.parkour.core.client.command.recreateMissingPlayerNames
 import dev.slne.surf.parkour.core.client.permission.ParkourPermissions
 

@@ -14,6 +14,19 @@ surfMicroservice {
     withRabbitModule(RabbitModule.CLIENT_API)
 }
 
+repositories {
+    mavenLocal()
+}
+
+minestomPluginFile {
+    main = "dev.slne.surf.parkour.minestom.ParkourMinestomPlugin"
+    authors = listOf("red")
+
+    pluginDependencies {
+        register("surf-rabbitmq-minestom")
+    }
+}
+
 dependencies {
     api(projects.surfParkourCore.surfParkourCoreClient)
     api(projects.surfParkourApi)

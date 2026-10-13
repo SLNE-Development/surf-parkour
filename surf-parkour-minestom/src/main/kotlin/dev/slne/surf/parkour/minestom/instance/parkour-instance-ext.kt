@@ -1,12 +1,30 @@
 package dev.slne.surf.parkour.minestom.instance
 
-import dev.slne.minestom.lobby.api.extension.InstanceManager
-import dev.slne.minestom.lobby.api.instance.worldKey
+import dev.slne.surf.api.minestom.extension.InstanceManager
 import dev.slne.surf.parkour.core.client.model.geometry.ParkourLocation
 import dev.slne.surf.parkour.core.client.model.geometry.ParkourVector
+import net.kyori.adventure.key.Key
 import net.minestom.server.coordinate.Point
 import net.minestom.server.coordinate.Pos
 import net.minestom.server.instance.Instance
+import net.minestom.server.tag.Tag
+
+/**
+ * The tag the lobby server stores the key of the world an instance was loaded from in.
+ */
+private val WORLD_KEY = Tag.String("surf_lobby_world_key")
+
+/**
+ * The key of the stored world this instance was loaded from, or `null` if it was not loaded from one.
+ */
+val Instance.worldKey: Key? get() = getTag(WORLD_KEY)?.let { Key.key(it) }
+
+/**
+ * The lobby world, the only instance the lobby server loads from a stored world.
+ *
+ * `null` while the server has not created it yet.
+ */
+val lobbyInstance: Instance? get() = InstanceManager.instances.firstOrNull { it.worldKey != null }
 
 /**
  * The name a parkour addresses this instance's world by.

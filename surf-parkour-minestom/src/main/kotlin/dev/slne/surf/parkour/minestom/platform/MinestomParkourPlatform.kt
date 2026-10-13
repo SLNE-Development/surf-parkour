@@ -1,16 +1,16 @@
 package dev.slne.surf.parkour.minestom.platform
 
 import com.google.auto.service.AutoService
-import dev.slne.minestom.lobby.api.coroutine.minestomAsyncScope
-import dev.slne.minestom.lobby.api.coroutine.minestomScope
-import dev.slne.minestom.lobby.api.extension.ConnectionManager
-import dev.slne.minestom.lobby.api.extension.getOrThrow
-import dev.slne.minestom.lobby.api.highlight.BlockHighlights
+import dev.slne.surf.api.minestom.coroutine.minestomAsyncScope
+import dev.slne.surf.api.minestom.coroutine.minestomScope
+import dev.slne.surf.api.minestom.extension.ConnectionManager
+import dev.slne.surf.api.minestom.extension.getOrThrow
+import dev.slne.surf.api.minestom.highlight.BlockHighlights
 import dev.slne.surf.parkour.core.client.model.geometry.ParkourLocation
 import dev.slne.surf.parkour.core.client.platform.ParkourPlatform
-import dev.slne.surf.parkour.minestom.ParkourMinestomEntrypoint
 import dev.slne.surf.parkour.minestom.instance.findParkourInstance
 import dev.slne.surf.parkour.minestom.instance.instance
+import dev.slne.surf.parkour.minestom.instance.lobbyInstance
 import dev.slne.surf.parkour.minestom.instance.parkourWorldName
 import dev.slne.surf.parkour.minestom.instance.toPos
 import kotlinx.coroutines.CoroutineScope
@@ -26,7 +26,7 @@ import java.util.*
 class MinestomParkourPlatform : ParkourPlatform {
 
     override val defaultWorld: String
-        get() = ParkourMinestomEntrypoint.lobbyInstance.parkourWorldName ?: FALLBACK_WORLD
+        get() = lobbyInstance?.parkourWorldName ?: FALLBACK_WORLD
 
     override fun isKnownWorld(world: String) = findParkourInstance(world) != null
 

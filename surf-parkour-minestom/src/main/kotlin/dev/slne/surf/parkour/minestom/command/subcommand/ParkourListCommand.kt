@@ -1,8 +1,8 @@
 package dev.slne.surf.parkour.minestom.command.subcommand
 
-import dev.slne.minestom.lobby.api.command.commandapi.dsl.anyExecutor
-import dev.slne.minestom.lobby.api.command.commandapi.dsl.integerArgument
-import dev.slne.minestom.lobby.api.command.commandapi.dsl.subcommand
+import dev.slne.surf.api.minestom.command.dsl.anyExecutor
+import dev.slne.surf.api.minestom.command.dsl.integerArgument
+import dev.slne.surf.api.minestom.command.dsl.subcommand
 import dev.slne.surf.api.core.messages.adventure.sendText
 import dev.slne.surf.parkour.core.client.command.appendNoParkourFound
 import dev.slne.surf.parkour.core.client.command.renderParkourList

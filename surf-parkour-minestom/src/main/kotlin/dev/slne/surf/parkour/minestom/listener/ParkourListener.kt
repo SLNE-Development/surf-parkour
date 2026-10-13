@@ -1,8 +1,7 @@
 package dev.slne.surf.parkour.minestom.listener
 
-import com.google.inject.Inject
-import dev.slne.minestom.lobby.api.event.EventRegistrar
-import dev.slne.minestom.lobby.api.extension.addListener
+import dev.slne.surf.api.minestom.event.EventRegistrar
+import dev.slne.surf.api.minestom.extension.addListener
 import dev.slne.surf.parkour.core.client.service.ParkourConnectionService
 import dev.slne.surf.parkour.core.client.service.ParkourMoveService
 import net.minestom.server.coordinate.Point
@@ -12,7 +11,7 @@ import net.minestom.server.event.player.PlayerDisconnectEvent
 import net.minestom.server.event.player.PlayerMoveEvent
 import net.minestom.server.event.player.PlayerSpawnEvent
 
-class ParkourListener @Inject constructor() : EventRegistrar {
+object ParkourListener : EventRegistrar {
     override fun register(node: EventNode<Event>) {
         node.addListener<PlayerMoveEvent> { event ->
             val from = event.player.position

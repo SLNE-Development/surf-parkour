@@ -8,6 +8,6 @@ import net.kyori.adventure.util.Services
 
 @AutoService(ParkourInstance::class)
 class MinestomParkourInstance : ClientParkourInstance, Services.Fallback {
-    override val dataPath get() = ParkourMinestomEntrypoint.dataPath
+    override val dataPath get() = ParkourMinestomPlugin.dataDirectory
     override val clientLoader by lazy { ClientLoader(dataPath) }
 }
