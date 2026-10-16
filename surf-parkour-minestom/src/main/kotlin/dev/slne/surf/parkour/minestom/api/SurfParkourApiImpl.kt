@@ -1,7 +1,7 @@
 package dev.slne.surf.parkour.minestom.api
 
 import com.google.auto.service.AutoService
-import dev.slne.minestom.lobby.api.extension.ConnectionManager
+import dev.slne.surf.api.minestom.extension.ConnectionManager
 import dev.slne.surf.api.minestom.inventory.framework.open
 import dev.slne.surf.parkour.api.SurfParkourApi
 import dev.slne.surf.parkour.core.client.menu.ParkourLeaderboardPreferences

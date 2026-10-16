@@ -1,6 +1,6 @@
 package dev.slne.surf.parkour.minestom.service
 
-import dev.slne.minestom.lobby.api.extension.SchedulerManager
+import dev.slne.surf.api.minestom.extension.SchedulerManager
 import dev.slne.surf.parkour.core.client.service.ParkourActionBarService
 import net.minestom.server.timer.ExecutionType
 import net.minestom.server.timer.Task

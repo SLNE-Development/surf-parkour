@@ -1,7 +1,7 @@
 package dev.slne.surf.parkour.minestom.command.subcommand
 
-import dev.slne.minestom.lobby.api.command.commandapi.dsl.playerExecutorSuspend
-import dev.slne.minestom.lobby.api.command.commandapi.dsl.subcommand
+import dev.slne.surf.api.minestom.command.dsl.playerExecutorSuspend
+import dev.slne.surf.api.minestom.command.dsl.subcommand
 import dev.slne.surf.api.core.messages.adventure.sendText
 import dev.slne.surf.parkour.core.client.command.appendAlreadyInParkour
 import dev.slne.surf.parkour.core.client.command.appendParkourStarted

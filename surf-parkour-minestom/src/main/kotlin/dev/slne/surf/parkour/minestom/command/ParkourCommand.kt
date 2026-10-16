@@ -1,7 +1,7 @@
 package dev.slne.surf.parkour.minestom.command
 
-import dev.slne.minestom.lobby.api.command.commandapi.dsl.commandAPICommand
-import dev.slne.minestom.lobby.api.command.commandapi.dsl.playerExecutor
+import dev.slne.surf.api.minestom.command.dsl.commandAPICommand
+import dev.slne.surf.api.minestom.command.dsl.playerExecutor
 import dev.slne.surf.api.minestom.inventory.framework.open
 import dev.slne.surf.parkour.core.client.menu.ParkourLeaderboardPreferences
 import dev.slne.surf.parkour.core.client.permission.ParkourPermissions

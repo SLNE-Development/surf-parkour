@@ -1,11 +1,11 @@
 package dev.slne.surf.parkour.minestom.command.subcommand
 
-import dev.slne.minestom.lobby.api.command.commandapi.dsl.blockPositionArgument
-import dev.slne.minestom.lobby.api.command.commandapi.dsl.locationArgument
-import dev.slne.minestom.lobby.api.command.commandapi.dsl.playerExecutor
-import dev.slne.minestom.lobby.api.command.commandapi.dsl.stringArgument
-import dev.slne.minestom.lobby.api.command.commandapi.dsl.subcommand
-import dev.slne.minestom.lobby.api.command.commandapi.dsl.textArgument
+import dev.slne.surf.api.minestom.command.dsl.blockPositionArgument
+import dev.slne.surf.api.minestom.command.dsl.locationArgument
+import dev.slne.surf.api.minestom.command.dsl.playerExecutor
+import dev.slne.surf.api.minestom.command.dsl.stringArgument
+import dev.slne.surf.api.minestom.command.dsl.subcommand
+import dev.slne.surf.api.minestom.command.dsl.textArgument
 import dev.slne.surf.api.core.messages.adventure.sendText
 import dev.slne.surf.parkour.core.client.command.appendIdentifierContainsSpaces
 import dev.slne.surf.parkour.core.client.command.appendIdentifierTaken

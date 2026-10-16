@@ -1,11 +1,11 @@
 package dev.slne.surf.parkour.minestom.command.argument
 
-import dev.slne.minestom.lobby.api.command.commandapi.CommandAPICommand
-import dev.slne.minestom.lobby.api.command.commandapi.argument.Argument
-import dev.slne.minestom.lobby.api.command.commandapi.argument.CustomArgument
-import dev.slne.minestom.lobby.api.command.commandapi.argument.StringArgument
-import dev.slne.minestom.lobby.api.command.commandapi.exception.CommandSyntaxException
-import dev.slne.minestom.lobby.api.command.commandapi.suggestion.ArgumentSuggestions
+import dev.slne.surf.api.minestom.command.CommandAPICommand
+import dev.slne.surf.api.minestom.command.argument.Argument
+import dev.slne.surf.api.minestom.command.argument.CustomArgument
+import dev.slne.surf.api.minestom.command.argument.StringArgument
+import dev.slne.surf.api.minestom.command.exception.CommandSyntaxException
+import dev.slne.surf.api.minestom.command.suggestion.ArgumentSuggestions
 import dev.slne.surf.api.core.messages.adventure.buildText
 import dev.slne.surf.parkour.core.client.command.appendUnknownParkour
 import dev.slne.surf.parkour.core.client.model.parkour.Parkour
